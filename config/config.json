@@ -1,8 +1,8 @@
 {
 	"Database": {
 		"Type": "Bolt",
-		"Bolt": {		
- 			"Path": "gowebapp.db"
+		"Bolt": {
+ 			"Path": "data/gowebapp.db"
   		},
 		"MongoDB": {
 			"URL": "127.0.0.1",
