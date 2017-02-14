@@ -1,16 +1,16 @@
-{{define "title"}}Notepad{{end}}
+{{define "title"}}Dream Diary{{end}}
 {{define "head"}}{{end}}
 {{define "content"}}
 <div class="container">
 	<div class="page-header">
-		<h1>{{.first_name}}'s Notepad</h1>
+		<h1>{{.first_name}}'s Dream Diary</h1>
 	</div>
 	<p>
 		<a title="Add Note" class="btn btn-primary" role="button" href="{{$.BaseURI}}notepad/create">
-			<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Note
+			<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Dream
 		</a>
 	</p>
-	
+
 	{{range $n := .notes}}
 		<div class="panel panel-default">
 			<div class="panel-body">
@@ -27,7 +27,7 @@
 			</div>
 		</div>
 	{{end}}
-	
+
 	{{template "footer" .}}
 </div>
 {{end}}
